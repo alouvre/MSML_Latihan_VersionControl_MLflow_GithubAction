@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Study_Base/00_A_LASKAR_AI/Dicoding_L_Membangun_Sistem_Machine_Learning/Latihan_1_Membuat_MLproject/mlflow-example/mlruns/0/0979e18b81754bd9b09b6adaf6d55678/artifacts
+end_time: 1750756507373
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0979e18b81754bd9b09b6adaf6d55678
+run_name: adventurous-asp-284
+run_uuid: 0979e18b81754bd9b09b6adaf6d55678
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750756492111
+status: 3
+tags: []
+user_id: User
