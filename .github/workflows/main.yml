@@ -21,26 +21,31 @@ jobs:
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE
-      - uses: actions/checkout@v3
+      - name: Run actions/checkout@v3
+        uses: actions/checkout@v3
 
-      # Setup Python 3.12.7
-      - name: Set up Python 3.12.7
+      # BENER
+      # Setup Python 3.11.13
+      - name: Set up Python 3.11.13
         uses: actions/setup-python@v4
         with:
-          python-version: "3.12.7"
+          python-version: 3.11.13
 
       # Check Env Variables
       - name: Check Env
         run: |
           echo $CSV_URL
+          python --version
+          pip --version
 
       # Install mlflow
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mlflow
+          pip install -r ./Project/requirements.txt
 
       # Run as a mlflow project
       - name: Run mlflow project
         run: |
-          mlflow run Project --env-manager=local
+          cd Project
+          mlflow run . --env-manager=local
